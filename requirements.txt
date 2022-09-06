@@ -1,1 +1,3 @@
 ipykernel==6.15.2
+azureml-opendatasets==1.44.0
+pandas==1.4.4
