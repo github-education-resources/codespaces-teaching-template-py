@@ -3,6 +3,8 @@ name: Docker Image CI
 on:
   pull_request:
     branches: [ "main" ]
+  # Allow mannually trigger
+  workflow_dispatch:
 
 jobs:
 
