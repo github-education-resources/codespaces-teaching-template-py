@@ -1,33 +1,107 @@
-# Project
+# What is GitHub Codespaces and how can I use it in my teaching?
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+A codespace is aa development environment that's hosted in the cloud that you can configure.
 
-As the maintainer of this project, please make a few updates:
+## Why use it
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+- Repeatable environment offering a 0-config experience.
+- Runs in the cloud.
+- Can be configured and customized.
+- Integrates with your repositories on GitHub.
 
-## Contributing
+## Customization
 
-This project welcomes contributions and suggestions.  Most contributions require you to agree to a
-Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
-the rights to use your contribution. For details, visit https://cla.opensource.microsoft.com.
+You can customize your project for GitHub Codespaces by committing configuration files to your repository (often known as Configuration-as-Code), which creates a repeatable codespace configuration for all users of your project.
 
-When you submit a pull request, a CLA bot will automatically determine whether you need to provide
-a CLA and decorate the PR appropriately (e.g., status check, comment). Simply follow the instructions
-provided by the bot. You will only need to do this once across all repos using our CLA.
+You can configure things like:
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or
-contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+- Extensions, you can specify what extensions should be preinstalled.
+- Dotfiles and settings.
 
-## Trademarks
+> Learn more here, <https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account>
 
-This project may contain trademarks or logos for projects, products, or services. Authorized use of Microsoft 
-trademarks or logos is subject to and must follow 
-[Microsoft's Trademark & Brand Guidelines](https://www.microsoft.com/en-us/legal/intellectualproperty/trademarks/usage/general).
-Use of Microsoft trademarks or logos in modified versions of this project must not cause confusion or imply Microsoft sponsorship.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
+## For the Educator
+
+For you as a teacher that means that you can create an environment, in the cloud, for your class that all students can use with 0 or next to 0 configuration regardless of what operating system they are using.
+
+## Codespaces template
+
+This repo is a GitHub template. The repo contains the following:
+
+- `/api`, The sub directory `/api` contains a Web API built in [Fast API](https://fastapi.tiangolo.com/).
+- `README.md`. This file describes this repository and what's in it.
+- `LICENSE`, this project is under MIT license. Learn more by reading the [LICENSE](./LICENSE) file in this repo.
+- `CONTRIBUTE`, this project welcomes contributions. Read more in [CONTRIBUTE](./CONTRIBUTE)
+
+## -1- Run it
+
+To run what's in this repo, you need to first start a Codespaces instance.
+
+1. Navigate to the main page of the newly created repository.
+1. Under the repository name, use the  Code drop-down menu, and in the Codespaces tab, select "Create codespace on main".
+   ![Create codespace](https://docs.github.com/assets/cb-138303/images/help/codespaces/new-codespace-button.png)
+Next, we will run our app.
+
+## -2- Inspect your codespaces environment
+
+What you have at this point is a pre configured environment where all the runtimes and libraries you need are already installed - a 0 config experience.
+
+You also have a Jupyter Notebook that you can start using without any configuration.
+
+> This environment will run the same regardless of whether your Students are on Windows, macOS or Linux.
+
+1. Open up your Jupyter Notebook file *exercise.ipynb* and note how you can add code and run it.
+
+## Challenges
+
+You can change yor environment. Let us take you through two different challenges that you are likely to want to do.
+
+### -1- Change Python runtime
+
+Let's say you want to change what version of Python is installed. This is something you can control.
+
+Open up *.devcontainer/devcontainer.json* and replace the following section:
+
+```json
+"VARIANT": "3.10-bullseye"
+```
+
+with the following instruction:
+
+```json
+"VARIANT": "3.8-bullseye"
+```
+
+this change will use Python 3.8 instead of 3.10.
+
+### -2- Add extension
+
+Your environment comes with preinstalled extensions. You can change which extensions your codespaces environment starts with, here's how:
+
+1. Open file *.devcontainer/devcontainer.json* and locate the following JSON element **extensions**
+
+   ```json
+   "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance"
+   ]
+   ```
+
+1. Add the following entry to **extensions** list:
+
+   ```json
+   "codespaces-Contrib.codeswing"
+   ```
+  
+   What you did above was to add the unique identifier of an extension of the [CodeSwing extension](https://marketplace.visualstudio.com/items?itemName=codespaces-Contrib.codeswing). This will let Codespaces know that this extension should be pre installed upon startup.
+
+To find the unique identifier of an extension:
+
+- Navigate to the extension's web page, like so <https://marketplace.visualstudio.com/items?itemName=codespaces-Contrib.codeswing>
+- Locate the *Unique Identifier* field under **More info** section on your right side.
+
+## Learn more
+
+- [GitHub Codespaces docs overview](https://docs.github.com/en/codespaces/overview)
+- [GitHub Codespaces docs quickstart](https://docs.github.com/en/codespaces/getting-started/quickstart)
+
