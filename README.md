@@ -28,7 +28,7 @@ For you as a teacher that means that you can create an environment, in the cloud
 
 This repo is a GitHub template. The repo contains the following:
 
-- `/api`, The sub directory `/api` contains a Web API built in [Fast API](https://fastapi.tiangolo.com/).
+- [example-notebook.ipynb](./example-notebook.ipynb), This notebook uses the [Pandas](https://pandas.pydata.org/) library to teach basic operations with a small CSV (Comma Separated Value file) [dataset](./wine-regions.csv)
 - `README.md`. This file describes this repository and what's in it.
 - `LICENSE`, this project is under MIT license. Learn more by reading the [LICENSE](./LICENSE) file in this repo.
 - `CONTRIBUTE`, this project welcomes contributions. Read more in [CONTRIBUTE](./CONTRIBUTE)
@@ -63,16 +63,16 @@ Let's say you want to change what version of Python is installed. This is someth
 Open up *.devcontainer/devcontainer.json* and replace the following section:
 
 ```json
-"VARIANT": "3.10-bullseye"
+"VARIANT": "3.8-bullseye"
 ```
 
 with the following instruction:
 
 ```json
-"VARIANT": "3.8-bullseye"
+"VARIANT": "3.9-bullseye"
 ```
 
-this change will use Python 3.8 instead of 3.10.
+this change will use Python 3.9 instead of 3.8.
 
 ### -2- Add extension
 
