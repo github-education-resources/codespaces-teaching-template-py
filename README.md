@@ -1,6 +1,6 @@
 # What is GitHub Codespaces and how can I use it in my teaching?
 
-A codespace is aa development environment that's hosted in the cloud that you can configure.
+A codespace is a development environment that's hosted in the cloud that you can configure.
 
 ## Why use it
 
@@ -39,7 +39,7 @@ To run what's in this repo, you need to first start a Codespaces instance.
 
 1. Navigate to the main page of the newly created repository.
 1. Under the repository name, use the  Code drop-down menu, and in the Codespaces tab, select "Create codespace on main".
-   ![Create codespace](https://docs.github.com/assets/cb-138303/images/help/codespaces/new-codespace-button.png)
+   ![Create codespace](https://docs.github.com/assets/cb-138303/images/help/codespaces/new-codespace-button.png)  
 Next, we will run our app.
 
 ## -2- Inspect your codespaces environment
