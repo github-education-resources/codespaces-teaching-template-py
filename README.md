@@ -1,5 +1,7 @@
 # What is GitHub Codespaces and how can I use it in my teaching?
 
+## Introduction
+
 A codespace is a development environment that's hosted in the cloud that you can configure.
 
 ## Why use it
@@ -22,7 +24,7 @@ You can configure things like:
 
 ## For the Educator
 
-For you as a teacher that means that you can create an environment, in the cloud, for your class that all students can use with 0 or next to 0 configuration regardless of what operating system they are using.
+For you as a teacher that means that you can create an environment, in the cloud, for your class that all students can use with zero or next to zero configuration regardless of what operating system they are using.
 
 ## Codespaces template
 
@@ -38,8 +40,13 @@ This repo is a GitHub template. The repo contains the following:
 To run what's in this repo, you need to first start a Codespaces instance.
 
 1. Navigate to the main page of the newly created repository.
-1. Under the repository name, use the  Code drop-down menu, and in the Codespaces tab, select "Create codespace on main".
-   ![Create codespace](https://docs.github.com/assets/cb-138303/images/help/codespaces/new-codespace-button.png)  
+1. Under the repository name, use the Code drop-down menu, and in the Codespaces tab, select "Create codespace on main".
+   ![Create codespace](https://docs.github.com/assets/cb-138303/images/help/codespaces/new-codespace-button.png)
+1. Creating codespace
+
+   ![Creating codespace](./images/Codespace_build.png)
+
+
 Next, we will run our app.
 
 ## -2- Inspect your codespaces environment
@@ -78,7 +85,7 @@ this change will use Python 3.9 instead of 3.8.
 
 Your environment comes with preinstalled extensions. You can change which extensions your codespaces environment starts with, here's how:
 
-1. Open file *.devcontainer/devcontainer.json* and locate the following JSON element **extensions**
+1. Open file *.devcontainer/devcontainer.json* and locate the following JSON element **extensions**:
 
    ```json
    "extensions": [
@@ -87,13 +94,20 @@ Your environment comes with preinstalled extensions. You can change which extens
    ]
    ```
 
-1. Add the following entry to **extensions** list:
+1. Add the following entry to **extensions** list and add a comma on the previous extension:
 
    ```json
    "codespaces-Contrib.codeswing"
    ```
   
    What you did above was to add the unique identifier of an extension of the [CodeSwing extension](https://marketplace.visualstudio.com/items?itemName=codespaces-Contrib.codeswing). This will let Codespaces know that this extension should be pre installed upon startup.
+   
+   Remainder: When you change any configration on the json, a box will appear after saving.
+   
+   ![Reacreating codespace](./images/Codespace_rebuild.png)
+   
+   Click on rebuild. Wait for your codespace to rebuild the VS Code environment.
+   
 
 To find the unique identifier of an extension:
 
