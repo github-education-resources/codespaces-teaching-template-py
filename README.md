@@ -4,7 +4,7 @@
 
 A codespace is a development environment that's hosted in the cloud that you can configure.
 
-## Why use it
+## Why use it?
 
 - Repeatable environment offering a 0-config experience.
 - Runs in the cloud.
@@ -51,23 +51,23 @@ Next, we will run our app.
 
 ## -2- Inspect your codespaces environment
 
-What you have at this point is a pre configured environment where all the runtimes and libraries you need are already installed - a 0 config experience.
+What you have at this point is a pre-configured environment where all the runtimes and libraries you need are already installed - a 0 config experience.
 
 You also have a Jupyter Notebook that you can start using without any configuration.
 
-> This environment will run the same regardless of whether your Students are on Windows, macOS or Linux.
+> This environment will run the same regardless of whether your students are on Windows, macOS or Linux.
 
 1. Open up your Jupyter Notebook file *exercise.ipynb* and note how you can add code and run it.
 
 ## Challenges
 
-You can change yor environment. Let us take you through two different challenges that you are likely to want to do.
+You can change your environment. Let us take you through two different challenges that you are likely to want to do.
 
 ### -1- Change Python runtime
 
 Let's say you want to change what version of Python is installed. This is something you can control.
 
-Open up *.devcontainer/devcontainer.json* and replace the following section:
+Open *.devcontainer/devcontainer.json* and replace the following section:
 
 ```json
 "VARIANT": "3.8-bullseye"
@@ -94,15 +94,15 @@ Your environment comes with preinstalled extensions. You can change which extens
    ]
    ```
 
-1. Add the following entry to **extensions** list and add a comma on the previous extension:
+1. Add the following entry to **the extensions** list and add a comma on the previous extension:
 
    ```json
    "codespaces-Contrib.codeswing"
    ```
   
-   What you did above was to add the unique identifier of an extension of the [CodeSwing extension](https://marketplace.visualstudio.com/items?itemName=codespaces-Contrib.codeswing). This will let Codespaces know that this extension should be pre installed upon startup.
+   What you did above was to add the unique identifier of an extension of the [CodeSwing extension](https://marketplace.visualstudio.com/items?itemName=codespaces-Contrib.codeswing). This will let Codespaces know that this extension should be pre-installed upon startup.
    
-   Remainder: When you change any configration on the json, a box will appear after saving.
+   Remainder: When you change any configuration on the json, a box will appear after saving.
    
    ![Reacreating codespace](./images/Codespace_rebuild.png)
    
