@@ -41,6 +41,7 @@ This repo is a GitHub template. The repo contains the following:
 
 To run what's in this repo, you need to first start a Codespaces instance.
 
+1. Create a repo from this template. Use this [create repo link](https://github.com/microsoft/codespaces-teaching-template-py/generate)
 1. Navigate to the main page of the newly created repository.
 1. Under the repository name, use the Code drop-down menu, and in the Codespaces tab, select "Create codespace on main".
    ![Create codespace](https://docs.github.com/assets/cb-138303/images/help/codespaces/new-codespace-button.png)
@@ -61,7 +62,7 @@ You also have a Jupyter Notebook that you can start using without any configurat
 
 1. Open up your Jupyter Notebook file *exercise.ipynb* and note how you can add code and run it.
 
-## Challenges
+## Next steps
 
 You can change your environment. Let us take you through two different challenges that you are likely to want to do.
 
