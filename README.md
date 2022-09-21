@@ -1,45 +1,44 @@
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=526669888)
 
-# What is GitHub Codespaces and how can I use it in my teaching?
+# Python Codespace Template
 
-## Introduction
+_Create or extend a ready-to-use repository for teaching Python in minutes_
 
-A codespace is a development environment that's hosted in the cloud that you can configure.
+With this template repository you can quickly create a normalized environment to teach or learn Python. Make your students focus on learning rather than setting up their environment. This template uses Codespaces, a development environment that's hosted in the cloud with [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), a powerful text editor.
 
-## Why use it?
+🚀 Codespaces features:
 
-- Repeatable environment offering a 0-config experience.
-- Runs in the cloud.
+- Repeatable cloud environment offering a push-button experience.
 - Can be configured and customized.
-- Integrates with your repositories on GitHub.
+- Integrates with your repositories on GitHub and [VSCode](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza)
+
+As a teacher that means that you can create an environment, in the cloud, for your class that all students can use with zero or next to zero configuration regardless of what operating system they are using.
 
 ## Customization
 
-You can customize your project for GitHub Codespaces by committing configuration files to your repository (often known as Configuration-as-Code), which creates a repeatable codespace configuration for all users of your project.
+Customize your project for GitHub Codespaces by committing configuration files to your repository (often known as Configuration-as-Code), which creates a repeatable codespace configuration for all users of your project.
 
 You can configure things like:
 
 - Extensions, you can specify what extensions should be preinstalled.
 - Dotfiles and settings.
+- Operating system libraries and dependencies
 
-> Learn more here, <https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account>
+> 💡 Learn more about [customization and configuration in the official documentation](https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account)
 
-## For the Educator
-
-For you as a teacher that means that you can create an environment, in the cloud, for your class that all students can use with zero or next to zero configuration regardless of what operating system they are using.
 
 ## Codespaces template
 
-This repo is a GitHub template. The repo contains the following:
+This repo is a GitHub template. It contains the following:
 
 - [example-notebook.ipynb](./example-notebook.ipynb), This notebook uses the [Pandas](https://pandas.pydata.org/) library to teach basic operations with a small CSV (Comma Separated Value file) [dataset](./wine-regions.csv)
+- [.devcontainer/Dockerfile](./.devcontainer/Dockerfile), So that you can configure what operating system the Codespace will use and how should the container be built.
+- [.devcontainer/devcontainer.json](./.devcontainer/devcontainer.json), A configuration file used by Codespaces to configure [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), for example to add and enable an extension.
 - `README.md`. This file describes this repository and what's in it.
-- `LICENSE`, this project is under MIT license. Learn more by reading the [LICENSE](./LICENSE) file in this repo.
-- `CONTRIBUTE`, this project welcomes contributions. Read more in [CONTRIBUTE](./CONTRIBUTE)
 
-## -1- Run it
+## 🧐 Try it out
 
-To run what's in this repo, you need to first start a Codespaces instance.
+Try out this template repository using Codespaces following these steps:
 
 1. Create a repo from this template. Use this [create repo link](https://github.com/microsoft/codespaces-teaching-template-py/generate)
 1. Navigate to the main page of the newly created repository.
@@ -50,27 +49,29 @@ To run what's in this repo, you need to first start a Codespaces instance.
    ![Creating codespace](./images/Codespace_build.png)
 
 
-Next, we will run our app.
+### Inspect your codespaces environment
 
-## -2- Inspect your codespaces environment
-
-What you have at this point is a pre-configured environment where all the runtimes and libraries you need are already installed - a 0 config experience.
+What you have at this point is a pre-configured environment where all the runtimes and libraries you need are already installed - a zero config experience.
 
 You also have a Jupyter Notebook that you can start using without any configuration.
 
 > This environment will run the same regardless of whether your students are on Windows, macOS or Linux.
 
-1. Open up your Jupyter Notebook file *exercise.ipynb* and note how you can add code and run it.
+Open up your Jupyter Notebook file [example-notebook.ipynb](./example-notebook.ipynb) and note how you can add code and run it.
 
-## Next steps
+## Customize the Codespace
 
-You can change your environment. Let us take you through two different challenges that you are likely to want to do.
+Let's make changes to your environment. We'll cover two different challenges that you are likely to want to do:
 
-### -1- Change Python runtime
+1. Change the Python version installed
+1. Add an extension
+
+
+### Step 1: Change the Python environment
 
 Let's say you want to change what version of Python is installed. This is something you can control.
 
-Open *.devcontainer/devcontainer.json* and replace the following section:
+Open [.devcontainer/devcontainer.json](./.devcontainer/devcontainer.json) and replace the following section:
 
 ```json
 "VARIANT": "3.8-bullseye"
@@ -84,11 +85,11 @@ with the following instruction:
 
 this change will use Python 3.9 instead of 3.8.
 
-### -2- Add extension
+### Step 2: Add an extension
 
 Your environment comes with preinstalled extensions. You can change which extensions your codespaces environment starts with, here's how:
 
-1. Open file *.devcontainer/devcontainer.json* and locate the following JSON element **extensions**:
+1. Open file [.devcontainer/devcontainer.json](./.devcontainer/devcontainer.json) and locate the following JSON element **extensions**:
 
    ```json
    "extensions": [
@@ -97,24 +98,28 @@ Your environment comes with preinstalled extensions. You can change which extens
    ]
    ```
 
-1. Add the following entry to **the extensions** list and add a comma on the previous extension:
+1. Add _"ms-python.black-formatter"_ to the list of extensions. It should end up looking like the following:
 
    ```json
-   "codespaces-Contrib.codeswing"
+   "extensions": [
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "ms-python.black-formatter"
+   ]
    ```
-  
-   What you did above was to add the unique identifier of an extension of the [CodeSwing extension](https://marketplace.visualstudio.com/items?itemName=codespaces-Contrib.codeswing). This will let Codespaces know that this extension should be pre-installed upon startup.
-   
+
+   What you did above was to add the unique identifier of an extension of the Python [Black Formatter extension](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter&WT.mc_id=academic-77460-alfredodeza). This will let Codespaces know that this extension should be pre-installed upon startup.
+
    Remainder: When you change any configuration on the json, a box will appear after saving.
-   
+
    ![Reacreating codespace](./images/Codespace_rebuild.png)
-   
+
    Click on rebuild. Wait for your codespace to rebuild the VS Code environment.
-   
+
 
 To find the unique identifier of an extension:
 
-- Navigate to the extension's web page, like so <https://marketplace.visualstudio.com/items?itemName=codespaces-Contrib.codeswing>
+- Navigate to the extension's web page, for example [https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter&WT.mc_id=academic-77460-alfredodeza)
 - Locate the *Unique Identifier* field under **More info** section on your right side.
 
 ## Learn more
