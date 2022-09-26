@@ -42,6 +42,9 @@ This repo is a GitHub template. It contains the following:
 - [.devcontainer/devcontainer.json](./.devcontainer/devcontainer.json), A configuration file used by Codespaces to configure [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), for example to add and enable an extension.
 - `README.md`. This file describes this repository and what's in it.
 
+### 🔎 Found an issue or have an idea for improvement? 
+Help us make this template repository better by [letting us know and opening an issue!](/../../issues/new). 
+
 ## 🧐 Try it out
 
 Try out this template repository using Codespaces following these steps:
