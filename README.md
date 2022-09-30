@@ -37,24 +37,20 @@ You can configure things like:
 
 This repo is a GitHub template. It contains the following:
 
-- [example-notebook.ipynb](./example-notebook.ipynb), This notebook uses the [Pandas](https://pandas.pydata.org/) library to teach basic operations with a small CSV (Comma Separated Value file) [dataset](./wine-regions.csv)
-- [.devcontainer/Dockerfile](./.devcontainer/Dockerfile), So that you can configure what operating system the Codespace will use and how should the container be built.
-- [.devcontainer/devcontainer.json](./.devcontainer/devcontainer.json), A configuration file used by Codespaces to configure [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), for example to add and enable an extension.
+- [example-notebook.ipynb](./example-notebook.ipynb): A Jupyter notebook using the [Pandas](https://pandas.pydata.org/) library to teach basic operations with a small CSV (Comma Separated Value file) [dataset](./wine-regions.csv)
+- [.devcontainer/Dockerfile](./.devcontainer/Dockerfile): Configuration file used by Codespaces to determine operating system and other details.
+- [.devcontainer/devcontainer.json](./.devcontainer/devcontainer.json), A configuration file used by Codespaces to configure [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza) settings, such as the enabling of additional extensions.
 - `README.md`. This file describes this repository and what's in it.
-
-### 🔎 Found an issue or have an idea for improvement? 
-Help us make this template repository better by [letting us know and opening an issue!](/../../issues/new). 
 
 ## 🧐 Try it out
 
 Try out this template repository using Codespaces following these steps:
 
-1. Create a repo from this template. Use this [create repo link](https://github.com/microsoft/codespaces-teaching-template-py/generate)
+1. Create a repository from this template. Use this [create repo link](https://github.com/microsoft/codespaces-teaching-template-py/generate). You can make the repository private or public, up to you.
 1. Navigate to the main page of the newly created repository.
 1. Under the repository name, use the Code drop-down menu, and in the Codespaces tab, select "Create codespace on main".
    ![Create codespace](https://docs.github.com/assets/cb-138303/images/help/codespaces/new-codespace-button.png)
-1. Creating codespace
-
+1. Wait as Github initializes the codespace:
    ![Creating codespace](./images/Codespace_build.png)
 
 
@@ -92,11 +88,17 @@ with the following instruction:
 "VARIANT": "3.9-bullseye"
 ```
 
-this change will use Python 3.9 instead of 3.8.
+This change instructs Codespaces to use Python 3.9 instead of 3.8.
+
+If you make any configuration change in `devcontainer.json`, a box will appear after saving.
+
+![Recreating Codespace](./images/Codespace_rebuild.png)
+
+Click on rebuild. Wait for your Codespace to rebuild the VS Code environment.
 
 ### Step 2: Add an extension
 
-Your environment comes with preinstalled extensions. You can change which extensions your codespaces environment starts with, here's how:
+Your environment comes with pre-installed extensions. You can change which extensions your Codespaces environment starts with. Here's how:
 
 1. Open file [.devcontainer/devcontainer.json](./.devcontainer/devcontainer.json) and locate the following JSON element **extensions**:
 
@@ -117,14 +119,13 @@ Your environment comes with preinstalled extensions. You can change which extens
    ]
    ```
 
-   What you did above was to add the unique identifier of an extension of the Python [Black Formatter extension](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter&WT.mc_id=academic-77460-alfredodeza). This will let Codespaces know that this extension should be pre-installed upon startup.
+   That string is the unique identifier of [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter&WT.mc_id=academic-77460-alfredodeza), a popular extension for formatting Python code according to best practices. Adding the _"ms-python.black-formatter"_ identifier to the list lets Codespaces know that this extension should be pre-installed upon startup.
 
    Remainder: When you change any configuration on the json, a box will appear after saving.
 
    ![Reacreating codespace](./images/Codespace_rebuild.png)
 
    Click on rebuild. Wait for your codespace to rebuild the VS Code environment.
-
 
 To find the unique identifier of an extension:
 
@@ -136,3 +137,6 @@ To find the unique identifier of an extension:
 - [GitHub Codespaces docs overview](https://docs.github.com/en/codespaces/overview)
 - [GitHub Codespaces docs quickstart](https://docs.github.com/en/codespaces/getting-started/quickstart)
 
+
+### 🔎 Found an issue or have an idea for improvement? 
+Help us make this template repository better by [letting us know and opening an issue!](/../../issues/new). 
