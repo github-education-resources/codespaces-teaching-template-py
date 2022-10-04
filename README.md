@@ -6,6 +6,10 @@ _Create or extend a ready-to-use repository for teaching Python in minutes_
 
 With this template repository you can quickly create a normalized environment to teach or learn Python. Make your students focus on learning rather than setting up their environment. This template uses Codespaces, a development environment that's hosted in the cloud with [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), a powerful text editor.
 
+🤔 Curious? Watch the following video where we explain all the details:
+
+[![Teaching Python with Codespaces](https://img.youtube.com/vi/7rMvb03hHpI/0.jpg)](https://youtu.be/7rMvb03hHpI "Teaching Python with Codespaces")
+
 <details>
    <summary><b>🎥 Watch the video tutorial to learn more about Codespaces</b></summary>
    
