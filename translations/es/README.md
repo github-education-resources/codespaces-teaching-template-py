@@ -1,10 +1,14 @@
 [![Abre en GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=526669888)
 
-# Plantilla de Python en Codespaces
+# Enseña Python en Codespaces
 
 _Crea o amplia un repositorio listo para usar para enseñar Python en minutos_
 
 Con esta plantilla puedes crear rápidamente un entorno normalizado para enseñar o aprender Python. Haz que tus estudiantes se centren en su aprendizaje en lugar de configurar su entorno. Esta plantilla utiliza Codespaces, un entorno de desarrollo alojado en la nube con [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), un poderoso editor de texto.
+
+🤔 ¿Curioso? Mira el siguiente vídeo donde te explicamos todos los detalles:
+
+[![Teaching Python with Codespaces](../../images/video-banner.gif)](https://youtu.be/7rMvb03hHpI "Teaching Python with Codespaces")
 
 <details>
    <summary><b>🎥 Ve el video tutorial para obtener más información sobre Codespaces</b></summary>
