@@ -8,7 +8,7 @@ Con esta plantilla puedes crear rápidamente un entorno normalizado para enseña
 
 🤔 ¿Curioso? Mira el siguiente vídeo donde te explicamos todos los detalles:
 
-[![Teaching Python with Codespaces](../../images/video-banner.gif)](https://youtu.be/7rMvb03hHpI "Teaching Python with Codespaces")
+[![Enseñando Python con Codespaces](../../images/video-banner.gif)](https://youtu.be/7rMvb03hHpI "Teaching Python with Codespaces")
 
 <details>
    <summary><b>🎥 Ve el video tutorial para obtener más información sobre Codespaces</b></summary>
