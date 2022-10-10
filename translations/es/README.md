@@ -55,7 +55,7 @@ Prueba este repositorio de plantillas con Codespaces siguiendo estos pasos:
    ![Crea un codespace](https://docs.github.com/assets/cb-138303/images/help/codespaces/new-codespace-button.png)
 1. Se empieza a crear tu Codespace
 
-   ![Creando el codespace](./images/Codespace_build.png)
+   ![Creando el codespace](../../images/Codespace_build.png)
 
 
 ### Inspeccionar el entorno de Codespaces
@@ -122,7 +122,7 @@ Tu entorno viene con extensiones preinstaladas. Puedes cambiar con qué extensio
 
    Recuerda: Cuando cambies cualquier configuración en el json, aparecerá un cuadro después de guardar.
 
-   ![Recreando codespace](./images/Codespace_rebuild.png)
+   ![Recreando codespace](../../images/Codespace_rebuild.png)
 
    Haz clic en reconstruir. Espera a que el espacio de código vuelva a generar el entorno de VS Code.
 
