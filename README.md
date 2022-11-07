@@ -4,7 +4,7 @@
 
 * **Who is this for?** _Educators of all levels_. 
 * **How much experience do students need?** _Zero_. This template is built with basic elements complete with comments so it can be used in beginner to advanced lessons.
-* **Prerequisites:** _None_. This template will provide a working and deployable web app you can immediately extend for your needs.
+* **Prerequisites:** _None_. This template will provide a working Jupyter Notebook with Pandas using a dataset so that you can immediately start analyzing data.
 
 _Create or extend a ready-to-use repository for teaching Python in minutes_
 
