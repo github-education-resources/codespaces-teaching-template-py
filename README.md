@@ -2,6 +2,10 @@
 
 # Python Codespace Template
 
+* **Who is this for?** _Educators of all levels_. 
+* **How much experience do students need?** _Zero_. This template is built with basic elements complete with comments so it can be used in beginner to advanced lessons.
+* **Prerequisites:** _None_. This template will provide a working Jupyter Notebook with Pandas using a dataset so that you can immediately start analyzing data.
+
 _Create or extend a ready-to-use repository for teaching Python in minutes_
 
 With this template repository you can quickly create a normalized environment to teach or learn Python. Make your students focus on learning rather than setting up their environment. This template uses Codespaces, a development environment that's hosted in the cloud with [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), a powerful text editor.
@@ -23,6 +27,12 @@ With this template repository you can quickly create a normalized environment to
 - Integrates with your repositories on GitHub and [VSCode](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza)
 
 As a teacher that means that you can create an environment, in the cloud, for your class that all students can use with zero or next to zero configuration regardless of what operating system they are using.
+
+## 🧑‍🏫 What is GitHub Codespace and how can I use it in my teaching?
+
+A Codespace is a development environment that's hosted in the cloud that you can configure. The Codespaces Education benefit gives Global Campus teachers a free monthly allowance of GitHub Codespaces hours to use in [GitHub Classroom](classroom.github.com). Learn more [here](https://docs.github.com/en/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom) about Using GitHub Codespaces with GitHub Classroom.
+
+If you are not already a Global Campus teacher, apply [here](https://education.github.com/discount_requests/pack_application) or for more information, see [Apply to GitHub Global Campus as a teacher](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-global-campus-for-teachers/apply-to-github-global-campus-as-a-teacher).
 
 ## Customization
 
@@ -140,6 +150,8 @@ To find the unique identifier of an extension:
 
 - [GitHub Codespaces docs overview](https://docs.github.com/en/codespaces/overview)
 - [GitHub Codespaces docs quickstart](https://docs.github.com/en/codespaces/getting-started/quickstart)
+- [Using GitHub Codespaces with GitHub Classroom](https://docs.github.com/en/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom)
+
 
 
 ### 🔎 Found an issue or have an idea for improvement? 
