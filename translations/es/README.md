@@ -2,6 +2,10 @@
 
 # Enseña Python en Codespaces
 
+* **¿A quién va dirigido?** _Educadores de todos los niveles_. 
+* **¿Cuánta experiencia necesitan los estudiantes?** _Ninguna experiencia previa_. Esta plantilla está construida con elementos básicos con comentarios para que pueda utilizarse en lecciones de principiantes a avanzados.
+* **Prerrequisitos:** _Ninguno_. Esta plantilla proporciona un Jupyter Notebook funcional con Pandas que utiliza un conjunto de datos para que puedas comenzar a analizar datos de inmediato.
+
 _Crea o amplia un repositorio listo para usar para enseñar Python en minutos_
 
 Con esta plantilla puedes crear rápidamente un entorno normalizado para enseñar o aprender Python. Haz que tus estudiantes se centren en su aprendizaje en lugar de configurar su entorno. Esta plantilla utiliza Codespaces, un entorno de desarrollo alojado en la nube con [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), un poderoso editor de texto.
@@ -23,6 +27,12 @@ Con esta plantilla puedes crear rápidamente un entorno normalizado para enseña
 - Se integra con sus repositorios en GitHub y [VSCode](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza)
 
 Como profesor, eso significa que puede crear un entorno, en la nube, para que en su clase todos los estudiantes puedan usar una configuración cero o casi nula, independientemente del sistema operativo que estén utilizando.
+
+## 🧑‍🏫 ¿Qué es GitHub Codespace y cómo puedo usarlo en mi enseñanza?
+
+Un Codespace es un entorno de desarrollo alojado en la nube que puede configurar. El beneficio Codespaces Education ofrece a los profesores de Global Campus una asignación mensual gratuita de horas de GitHub Codespaces para usar en [GitHub Classroom](classroom.github.com). Obten más información [aquí](https://docs.github.com/en/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom) sobre el uso de GitHub Codespaces con GitHub Classroom.
+
+Si aún no eres profesor de Global Campus, aplica [aquí](https://education.github.com/discount_requests/pack_application) o para obtener más información, consulta [Aplicar a GitHub Global Campus como profesor](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-global-campus-for-teachers/apply-to-github-global-campus-as-a-teacher).
 
 ## Personalización
 
@@ -140,4 +150,5 @@ Para encontrar el identificador único de una extensión:
 
 - [GitHub Codespaces docs - Visión general](https://docs.github.com/en/codespaces/overview)
 - [GitHub Codespaces docs - Comienza rapido](https://docs.github.com/en/codespaces/getting-started/quickstart)
+- [Usa GitHub Codespaces con GitHub Classroom](https://docs.github.com/en/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom)
 
