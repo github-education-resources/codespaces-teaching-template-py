@@ -2,13 +2,16 @@
 
 # Python Codespace Template
 
-* **Who is this for?** _Educators of all levels_. 
-* **How much experience do students need?** _Zero_. This template is built with basic elements complete with comments so it can be used in beginner to advanced lessons.
-* **Prerequisites:** _None_. This template will provide a working Jupyter Notebook with Pandas using a dataset so that you can immediately start analyzing data.
-
 _Create or extend a ready-to-use repository for teaching Python in minutes_
 
+* **Who is this for?** _Educators of all levels_. 
+* **How much experience do students need?** _Zero_. This template is built with basic elements complete with comments so it can be used in beginner to advanced lessons.
+* **Prerequisites:** _None_. This template will provide a working Jupyter Notebook with Pandas using a dataset so that you can immediately start analyzing data as well as an example Notebook that you can use to teach Python with [GitHub Copilot](https://copilot.github.com), a powerful AI tool that helps you write code faster.
+
+
 With this template repository you can quickly create a normalized environment to teach or learn Python. Make your students focus on learning rather than setting up their environment. This template uses Codespaces, a development environment that's hosted in the cloud with [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), a powerful text editor.
+
+You'll also get the chance to try out Copilot to create a lesson plan using the [example-lesson.ipynb](./example-lesson.ipynb) file.
 
 🤔 Curious? Watch the following video where we explain all the details:
 
@@ -145,6 +148,93 @@ To find the unique identifier of an extension:
 
 - Navigate to the extension's web page, for example [https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter&WT.mc_id=academic-77460-alfredodeza)
 - Locate the *Unique Identifier* field under **More info** section on your right side.
+
+## 🤖 Use Copilot to create a lesson for students
+GitHub Copilot is now available in GitHub Codespaces. You can use Copilot to create a lesson for your students. This repository includes the extension for Copilot so that you can use it right away. Make sure your account has access to Copilot. If you don't have access, you can [request access here](https://github.com/login?return_to=%2Fgithub-copilot%2Fsignup).
+
+GitHub Copilot is free for students and faculty. [Learn more](https://education.github.com/pack/offers). Follow [these steps](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279?WT.mc_id=academic-0000-alfredodeza) to verify your student or faculty membership and enable Copilot for free.
+
+### Step 1: Write a description for your lesson
+Open the [example-notebook.ipynb](./example-notebook.ipynb) file and write a description for your lesson in the first cell. Make sure Copilot is enabled by clicking on the Copilot icon in the status bar and ensuring you're logged into GitHub.
+
+Edit the first cell and start typing `For this lesson`. Copilot will suggest a description for your lesson. Select the suggestion and press `Tab` to accept it.
+
+The cell should now look similar to this:
+
+```markdown
+# Create a lesson using GitHub Copilot
+For this lesson, you'll use GitHub Copilot to create a lesson for students to learn how to write functions in Python. You'll use Copilot to write code, and you'll use Copilot to write text.
+```
+
+It is OK if Copilot doesn't suggest an exact replica of the text above. You can edit the text to make it more suitable for your lesson.
+
+### Step 2 Add steps to your lesson
+Add a new cell below the description cell and start typing `### Step 1: Enable` to create a new step in your lesson. Copilot will suggest a step for your lesson. Select the suggestion and press `Tab` to accept it.
+
+The cell should now look similar to this:
+
+```markdown
+## Step 1: Enable GitHub Copilot
+Enable Copilot by following the instructions in the [GitHub Copilot documentation](https://docs.github.com/en/codespaces/developing-with-codespaces/using-codespaces-with-github-copilot). If you are a student, you can get a free [GitHub Student Developer Pack](https://education.github.com/pack) to get access to Copilot.
+```
+
+Keep adding more steps and continue typing to get more accurate suggestions for the content you are interested in. For example, this is a step that Copilot suggested for the next step in the lesson:
+
+```markdown
+## Step 3: Create challenges for this lesson
+You'll teach students how to write functions in Python.
+```
+
+You can use the example above to see what Copilot can suggest and auto-complete. Feel free to add as many steps as you think are necessary for your lesson.
+
+### Step 3: Add code challenges for students
+Add a new code cell below the last step and start with a Python comment that describes the challenge. For example, you can write `# create a challenge for a student to write a function that returns the sum of two numbers`. Copilot will suggest a solution for the challenge. Select the suggestion and press `Tab` to accept it. For every new line, you can press `Return` (or `Enter`) to get a new suggestion.
+
+This is a sample of what Copilot suggested for the challenge above:
+
+```python
+# create a challenge for a student to write a function that returns the sum of two numbers
+"""
+In this challenge, you'll write a function that returns the sum of two numbers.
+You'll use the `sum` function to add the two numbers.
+Start by writing a function that takes two numbers as parameters.
+Then, use the `sum` function to add the two numbers.
+Finally, return the sum of the two numbers.
+"""
+```
+
+Again, your challenge may not be exactly the same as the one above. You can edit the challenge to make it more suitable for your lesson.
+
+Create as many code cells with example prompts for your lesson.
+
+### Step 4: Create a quiz for students
+Add a new cell below for writing Markdown (not code!) and start by writing `### Quiz`. Then add an _HTML_ comment to create a prompt so that GitHub Copilot understands what type of quiz you want to create. For example, you could use something similar to this:
+
+```html
+<!-- generate a quiz of 5 questions about using Python functions with a mix of variable arguments and keyword arguments -->
+```
+
+Copilot might not suggest a quiz for you right away. If that's the case, add new lines to the comment and press `Return` (or `Enter`) and start enumerating the questions you want to ask. For example, you could write:
+
+```markdown
+1. What is the output of the following code?
+```
+
+Of if you are looking for a specific question about a topic it could be:
+
+```markdown
+2. When you create a function that
+```
+
+Copilot suggested a question using variable arguments which is what the challenge is about:
+
+```markdown
+2. When you create a function that accepts a variable number of arguments, what is the name of the parameter that you use to access the arguments?
+```
+
+Finally, review the cells and make changes as necessary. You can also add more steps, challenges, and questions to your lesson. 
+
+Congratulations! You've created a lesson for students to learn how to write functions in Python using GitHub Copilot. You can use Copilot to assist you in documentation, writing examples, or challenges like in this repository. Even this whole section was written using Copilot!
 
 ## Learn more
 
