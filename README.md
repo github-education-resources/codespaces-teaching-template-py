@@ -152,9 +152,7 @@ To find the unique identifier of an extension:
 ## 🤖 Use Copilot to create a lesson for students
 GitHub Copilot is now available in GitHub Codespaces. You can use Copilot to create a lesson for your students. This repository includes the extension for Copilot so that you can use it right away. Make sure your account has access to Copilot. If you don't have access, you can [request access here](https://github.com/login?return_to=%2Fgithub-copilot%2Fsignup).
 
-GitHub Copilot is free for students and faculty. [Learn more](https://education.github.com/pack/offers?WT.mc_id=academic-77460-alfredodeza). Follow [these steps]( ) to enable Copilot for free.
-
-GitHub Copilot is free for students and faculty. [Learn more](https://education.github.com/pack/offers?WT.mc_id=academic-77460-alfredodeza). Follow [these steps](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279?WT.mc_id=academic-0000-alfredodeza) to verify your student or faculty membership and enable Copilot for free.
+GitHub Copilot is free for students and faculty. [Learn more](https://education.github.com/pack/offers). Follow [these steps](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279?WT.mc_id=academic-0000-alfredodeza) to verify your student or faculty membership and enable Copilot for free.
 
 ### Step 1: Write a description for your lesson
 Open the [example-notebook.ipynb](./example-notebook.ipynb) file and write a description for your lesson in the first cell. Make sure Copilot is enabled by clicking on the Copilot icon in the status bar and ensuring you're logged into GitHub.
