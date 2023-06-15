@@ -12,7 +12,7 @@ _Crie ou estenda um repositório pronto para uso para ensinar Python em minutos_
 
 Com este repositório de modelos, você pode criar rapidamente um ambiente normalizado para ensinar ou aprender Python. Faça com que seus alunos se concentrem no aprendizado, em vez de configurar o ambiente. Este modelo usa Codespaces, um ambiente de desenvolvimento hospedado na nuvem com [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), um poderoso editor de texto.
 
-Você também terá a chance de experimentar o Copilot para criar um plano de aula usando o arquivo [example-lesson.ipynb](./example-lesson.ipynb).
+Você também terá a chance de experimentar o Copilot para criar um plano de aula usando o arquivo [exemplo-licao.ipynb](./exemplo-licao.ipynb).
 
 🤔 Curioso? Veja o seguinte vídeo onde explicamos todos os detalhes:
 
@@ -34,13 +34,13 @@ Como professor, isso significa que você pode criar um ambiente, na nuvem, para 
 
 ## 🧑‍🏫 O que é GitHub Codespace e como posso usá-lo em minhas aulas?
 
-Um Codespace é um ambiente de desenvolvimento hospedado na nuvem que você pode configurar. O benefício Codespaces Education oferece aos professores do Global Campus um subsídio mensal gratuito de horas de GitHub Codespaces para usar no [GitHub Classroom](classroom.github.com). Saiba mais [aqui](https://docs.github.com/en/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with- github-classroom) sobre o uso de codespaces do GitHub com o GitHub Classroom.
+Um Codespace é um ambiente de desenvolvimento hospedado na nuvem que você pode configurar. O benefício Codespaces Education oferece aos professores do Global Campus um subsídio mensal gratuito de horas de GitHub Codespaces para usar no [GitHub Classroom](https://classroom.github.com). Saiba mais [aqui](https://docs.github.com/pt/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom) sobre o uso de codespaces do GitHub com o GitHub Classroom.
 
-Se você ainda não é professor do Global Campus, inscreva-se [aqui](https://education.github.com/discount_requests/pack_application) ou, para obter mais informações, consulte [Inscreva-se no GitHub Global Campus como professor](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-global-campus-for-teachers/apply-to-github-global-campus-as-a-teacher).
+Se você ainda não é professor do Global Campus, inscreva-se [aqui](https://education.github.com/discount_requests/pack_application) ou, para obter mais informações, consulte [Inscreva-se no GitHub Global Campus como professor](https://docs.github.com/pt/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-global-campus-for-teachers/apply-to-github-global-campus-as-a-teacher).
 
 ## Costumização
 
-Personalize seu projeto para GitHub Codespaces confirmando arquivos de configuração em seu repositório (geralmente conhecido como Configuração como Código), que cria uma configuração de codespace repetível para todos os usuários de seu projeto.
+Personalize seu projeto para GitHub Codespaces alterando os arquivos de configuração em seu repositório (geralmente conhecido como Configuração-como-Código), que cria uma configuração de codespace repetível para todos os usuários de seu projeto.
 
 Você pode configurar coisas como:
 
@@ -48,14 +48,14 @@ Você pode configurar coisas como:
 - Dotfiles e configurações.
 - Bibliotecas e dependências do sistema operacional
 
-> 💡 Saiba mais sobre [customização e configuração na documentação oficial](https://docs.github.com/en/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account)
+> 💡 Saiba mais sobre [customização e configuração na documentação oficial](https://docs.github.com/pt/codespaces/customizing-your-codespace/personalizing-github-codespaces-for-your-account)
 
 
 ## Modelo do Codespace
 
 Este repositório é um modelo do GitHub. Ele contém o seguinte:
 
-- [example-notebook.ipynb](./example-notebook.ipynb): um notebook Jupyter usando a biblioteca [Pandas](https://pandas.pydata.org/) para ensinar operações básicas com um pequeno arquivo CSV (separado por vírgula Arquivo de valor) [dataset](./wine-regions.csv)
+- [examplo-notebook.ipynb](./examplo-notebook.ipynb): um notebook Jupyter usando a biblioteca [Pandas](https://pandas.pydata.org/) para ensinar operações básicas com um pequeno arquivo CSV (separado por vírgula Arquivo de valor) [dataset](./wine-regions.csv)
 - [.devcontainer/Dockerfile](./.devcontainer/Dockerfile): Arquivo de configuração usado pelo Codespaces para determinar o sistema operacional e outros detalhes.
 - [.devcontainer/devcontainer.json](./.devcontainer/devcontainer.json), Um arquivo de configuração usado por Codespaces para configurar [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), como a ativação de extensões adicionais.
 - `README.md`. Este arquivo descreve este repositório e o que há nele.
@@ -80,7 +80,7 @@ Você também tem um Jupyter Notebook que pode começar a usar sem nenhuma confi
 
 > Este ambiente será executado da mesma forma, independentemente de seus alunos estarem no Windows, macOS ou Linux.
 
-Abra seu arquivo Jupyter Notebook [example-notebook.ipynb](./example-notebook.ipynb) e observe como você pode adicionar código e executá-lo.
+Abra seu arquivo Jupyter Notebook [examplo-notebook.ipynb](./examplo-notebook.ipynb) e observe como você pode adicionar código e executá-lo.
 
 ## Personalize o Codespace
 
@@ -157,7 +157,7 @@ O GitHub Copilot agora está disponível no GitHub Codespaces. Você pode usar o
 O GitHub Copilot é gratuito para alunos e professores. [Saiba mais](https://education.github.com/pack/offers). Siga [estas etapas](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba- p/3736279?WT.mc_id=academic-0000-alfredodeza) para verificar sua associação de aluno ou professor e habilitar o Copilot gratuitamente.
 
 ### Passo 1: Escreva uma descrição para sua aula
-Abra o arquivo [example-notebook.ipynb](./example-notebook.ipynb) e escreva uma descrição para sua lição na primeira célula. Certifique-se de que o Copilot esteja ativado clicando no ícone do Copilot na barra de status e verificando se você está conectado ao GitHub.
+Abra o arquivo [examplo-notebook.ipynb](./examplo-notebook.ipynb) e escreva uma descrição para sua lição na primeira célula. Certifique-se de que o Copilot esteja ativado clicando no ícone do Copilot na barra de status e verificando se você está conectado ao GitHub.
 
 Edite a primeira célula e comece a digitar `Para esta lição`. O Copilot irá sugerir uma descrição para sua aula. Selecione a sugestão e pressione `Tab` para aceitá-la.
 
@@ -177,7 +177,7 @@ A célula agora deve ser semelhante a esta:
 
 ```markdown
 ## Passo 1: Habilitar GitHub Copilot
-Habilite o Copilot seguindo as instruções na [documentação do GitHub Copilot](https://docs.github.com/en/codespaces/developing-with-codespaces/using-codespaces-with-github-copilot). Se você é um estudante, pode obter um [GitHub Student Developer Pack] gratuito (https://education.github.com/pack) para obter acesso ao Copilot.
+Habilite o Copilot seguindo as instruções na [documentação do GitHub Copilot](https://docs.github.com/pt/codespaces/developing-with-codespaces/using-codespaces-with-github-copilot). Se você é um estudante, pode obter um [GitHub Student Developer Pack] gratuito (https://education.github.com/pack) para obter acesso ao Copilot.
 ```
 
 Continue adicionando mais etapas e digitando para obter sugestões mais precisas para o conteúdo de seu interesse. Por exemplo, esta é uma etapa sugerida pelo Copilot para a próxima etapa da lição:
@@ -240,9 +240,9 @@ Parabéns! Você criou uma lição para os alunos aprenderem a escrever funçõe
 
 ## Saiba mais
 
-- [Visão geral do GitHub Codespaces](https://docs.github.com/en/codespaces/overview)
-- [Início rápido com GitHub Codespaces](https://docs.github.com/en/codespaces/getting-started/quickstart)
-- [Usando GitHub Codespaces com GitHub Classroom](https://docs.github.com/en/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom)
+- [GitHub Codespaces docs - Visão geral](https://docs.github.com/pt/codespaces/overview)
+- [GitHub Codespaces docs - Início rápido](https://docs.github.com/pt/codespaces/getting-started/quickstart)
+- [Usando GitHub Codespaces com GitHub Classroom](https://docs.github.com/pt/education/manage-coursework-with-github-classroom/integrate-github-classroom-with-an-ide/using-github-codespaces-with-github-classroom)
 
 
 
