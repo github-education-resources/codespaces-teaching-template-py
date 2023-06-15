@@ -16,7 +16,7 @@ Você também terá a chance de experimentar o Copilot para criar um plano de au
 
 🤔 Curioso? Veja o seguinte vídeo onde explicamos todos os detalhes:
 
-[![Ensinando Python com Codespaces](https://img.youtube.com/vi/7rMvb03hHpI/0.jpg)](https://youtu.be/7rMvb03hHpI "Ensinando Python com Codespaces")
+[![Ensinando Python com Codespaces](../../images/video-banner.gif)](https://youtu.be/7rMvb03hHpI "Ensinando Python com Codespaces")
 
 <details>
    <summary><b>🎥 Assista ao tutorial em vídeo para saber mais sobre Codespaces </b></summary>
@@ -28,7 +28,7 @@ Você também terá a chance de experimentar o Copilot para criar um plano de au
 
 - Ambiente de nuvem repetível que oferece uma experiência de apertar botão.
 - Pode ser configurado e personalizado.
-- Integra-se com seus repositórios no GitHub e[VSCode](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza)
+- Integra-se com seus repositórios no GitHub e [VSCode](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza)
 
 Como professor, isso significa que você pode criar um ambiente, na nuvem, para sua turma que todos os alunos possam usar com configuração zero ou quase zero, independentemente do sistema operacional que estejam usando.
 
@@ -55,7 +55,7 @@ Você pode configurar coisas como:
 
 Este repositório é um modelo do GitHub. Ele contém o seguinte:
 
-- [examplo-notebook.ipynb](./examplo-notebook.ipynb): um notebook Jupyter usando a biblioteca [Pandas](https://pandas.pydata.org/) para ensinar operações básicas com um pequeno arquivo CSV (separado por vírgula Arquivo de valor) [dataset](./wine-regions.csv)
+- [examplo-notebook.ipynb](./examplo-notebook.ipynb): um notebook Jupyter usando a biblioteca [Pandas](https://pandas.pydata.org/) para ensinar operações básicas com um pequeno arquivo CSV (separado por vírgula Arquivo de valor) [dataset](../../wine-regions.csv)
 - [.devcontainer/Dockerfile](./.devcontainer/Dockerfile): Arquivo de configuração usado pelo Codespaces para determinar o sistema operacional e outros detalhes.
 - [.devcontainer/devcontainer.json](./.devcontainer/devcontainer.json), Um arquivo de configuração usado por Codespaces para configurar [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), como a ativação de extensões adicionais.
 - `README.md`. Este arquivo descreve este repositório e o que há nele.
@@ -69,7 +69,7 @@ Experimente este repositório de modelos usando Codespaces seguindo estas etapas
 1. Sob o nome do repositório, use o menu suspenso Código e, na guia Codespaces, selecione "Criar Codespace na main".
     ![Criar o Codespace](https://docs.github.com/assets/cb-138303/images/help/codespaces/new-codespace-button.png)
 1. Aguarde enquanto o Github inicializa o Codespace:
-    ![Criando o Codespace](./images/Codespace_build.png)
+    ![Criando o Codespace](../../images/Codespace_build.png)
 
 
 ### Inspecione seu ambiente do Codespaces
@@ -142,7 +142,7 @@ Seu ambiente vem com extensões pré-instaladas. Você pode alterar com quais ex
 
    Aviso: Ao alterar qualquer configuração no json, aparecerá uma caixa após salvar.
 
-   ![Recriando o Codespace](./images/Codespace_rebuild.png)
+   ![Recriando o Codespace](../../images/Codespace_rebuild.png)
 
    Clique em reconstruir. Aguarde seu codespace reconstruir o ambiente do VS Code.
 
