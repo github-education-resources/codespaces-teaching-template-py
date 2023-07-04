@@ -14,7 +14,7 @@ Tú también tendrás la oportunidad de probar Copilot para crear un plan de cla
 
 🤔 ¿Curioso? Mira el siguiente vídeo donde te explicamos todos los detalles:
 
-[![Enseñando Python con Codespaces](https://img.youtube.com/vi/7rMvb03hHpI/0.jpg)](https://youtu.be/7rMvb03hHpI "Teaching Python with Codespacess")
+[![Enseñando Python con Codespaces](https://img.youtube.com/vi/7rMvb03hHpI/0.jpg)](https://youtu.be/7rMvb03hHpI "Enseñando Python con Codespaces")
 
 <details>
    <summary><b>🎥 Ve el video tutorial para obtener más información sobre Codespaces</b></summary>
@@ -54,8 +54,8 @@ Puedes configurar cosas como:
 Este repositorio es una plantilla de GitHub, la cual contiene lo siguiente:
 
 - [example-notebook.ipynb](./example-notebook.ipynb): Un notebook que utiliza la librería [Pandas](https://pandas.pydata.org/) para enseñar operaciones básicas con un pequeño archivo CSV (_Comma Separated Value_) [dataset](./wine-regions.csv)
-- [.devcontainer/Dockerfile](./.devcontainer/Dockerfile): Archivo de configuración usado por Codespaces para determinar el sistema operativo y otros detalles.
-- [.devcontainer/devcontainer.json](./.devcontainer/devcontainer.json): Un archivo de configuración utilizado por Codespaces para configurar [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), por ejemplo, para agregar y habilitar extensiones adicionales.
+- [.devcontainer/Dockerfile](../../.devcontainer/Dockerfile): Archivo de configuración usado por Codespaces para determinar el sistema operativo y otros detalles.
+- [.devcontainer/devcontainer.json](../../.devcontainer/devcontainer.json): Un archivo de configuración utilizado por Codespaces para configurar [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), por ejemplo, para agregar y habilitar extensiones adicionales.
 - `README.md`. Este archivo describe este repositorio y lo que contiene.
 
 ## 🧐 ¡Pruébalo!
@@ -64,9 +64,9 @@ Prueba este repositorio de plantillas con Codespaces siguiendo estos pasos:
 
 1. Crea un repositorio desde esta plantilla. Utiliza este [link crea un repositorio](https://github.com/microsoft/codespaces-teaching-template-py/generate). Tú puedes hacer este repositorio privado o público, es tú decisión.
 2. Navega a la página principal del repositorio recién creado.
-3. Debajo del nombre del repositorio, usa el menú desplegable Código, y en la pestaña Codespaces, selecciona "Crear Codespace en main".
+3. Debajo del nombre del repositorio, usa el menú desplegable Code (Código), y en la pestaña Codespaces, selecciona "Create codespace on main" (Crear Codespace en main).
    ![Crea un codespace](https://docs.github.com/assets/cb-138303/images/help/codespaces/new-codespace-button.png)
-4. Espera mientras se inicializa tu Codespace
+4. Espera mientras GitHub inicializa el Codespace.
 
    ![Creando el codespace](../../images/Codespace_build.png)
 
@@ -147,7 +147,7 @@ Para encontrar el identificador único de una extensión:
 ## 🤖 Utiliza Copilot para crear una lección para alumnos
 GitHub Copilot ya está disponible en GitHub Codespaces. Puedes utilizar Copilot para crear una clase para tus alumnos. Este repositorio incluye la extensión de Copilot para que puedas utilizarla inmediatamente. Asegúrate de que tu cuenta tiene acceso a Copilot. Si no tienes acceso, puedes [solicitar acceso aquí](https://github.com/login?return_to=%2Fgithub-copilot%2Fsignup).
 
-GitHub Copilot es gratis para estudiantes y profesores. [Más información](https://education.github.com/pack/offers). Sigue [estos pasos](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279?WT.mc_id=academic-0000-alfredodeza) para verificar tu afiliación como estudiante o profesor y activar Copilot de forma gratuita.
+GitHub Copilot es gratis para estudiantes y profesores. [Más información](https://education.github.com/pack/offers). Sigue [estos pasos](https://techcommunity.microsoft.com/t5/educator-developer-blog/qu%C3%A9-es-github-copilot-y-c%C3%B3mo-pueden-los-estudiantes-y-maestros/ba-p/3815760?WT.mc_id=studentamb_118941) para verificar tu afiliación como estudiante o profesor y activar Copilot de forma gratuita.
 
 ### Paso 1: Escriba una descripción para su lección
 Abra el archivo [example-notebook.ipynb](./example-notebook.ipynb) y escriba una descripción para su clase en la primera celda. Asegúrate de que Copilot está activado haciendo clic en el icono de Copilot en la barra de estado y asegurándote de que has iniciado sesión en GitHub.
