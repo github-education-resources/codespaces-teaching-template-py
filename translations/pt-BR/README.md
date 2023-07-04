@@ -3,16 +3,16 @@
 
 # Ensine Python no Codespace
 
-_Crie ou estenda um repositório pronto para uso para ensinar Python em minutos_
+_Crie ou estenda (fork) um repositório pronto para uso para ensinar Python em minutos!_
 
 * **Para quem é?** _Educadores de todos os níveis_.
-* **Quanta experiência os alunos precisam?** _Zero_. Este modelo é construído com elementos básicos completos com comentários para que possa ser usado em aulas de iniciante ao avançado.
-* **Pré-requisitos:** _Nenhum_. Este modelo fornecerá um Jupyter Notebook funcional com Pandas usando um conjunto de dados para que você possa começar a analisar dados imediatamente, bem como um Notebook de exemplo que você pode usar para ensinar Python com [GitHub Copilot](https://copilot.github.com) , uma poderosa ferramenta de IA que ajuda você a escrever código mais rapidamente.
+* **Quanta experiência os alunos precisam?** _Nenhuma_. Este modelo é construído com todos os elementos básicos com comentários para que possa ser usado em aulas, do nível iniciante ao avançado.
+* **Pré-requisitos:** _Nenhum_. Este modelo fornecerá um Jupyter Notebook funcional com Pandas, usando um conjunto de dados para que você possa começar a analisar dados imediatamente, bem como um Notebook de exemplo que você pode usar para ensinar Python com [GitHub Copilot](https://copilot.github.com) , uma poderosa ferramenta de IA que ajuda você a escrever código mais rapidamente.
 
 
 Com este repositório de modelos, você pode criar rapidamente um ambiente normalizado para ensinar ou aprender Python. Faça com que seus alunos se concentrem no aprendizado, em vez de configurar o ambiente. Este modelo usa Codespaces, um ambiente de desenvolvimento hospedado na nuvem com [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), um poderoso editor de texto.
 
-Você também terá a chance de experimentar o Copilot para criar um plano de aula usando o arquivo [exemplo-licao.ipynb](./exemplo-licao.ipynb).
+Você também terá a chance de experimentar o Copilot para criar um plano de aula usando o arquivo [licao.ipynb](./licao.ipynb).
 
 🤔 Curioso? Veja o seguinte vídeo onde explicamos todos os detalhes:
 
@@ -26,11 +26,11 @@ Você também terá a chance de experimentar o Copilot para criar um plano de au
 
 🚀 Recursos do Codespaces:
 
-- Ambiente de nuvem repetível que oferece uma experiência de apertar botão.
+- Ambiente em nuvem repetível que oferece uma experiência de um clique.
 - Pode ser configurado e personalizado.
 - Integra-se com seus repositórios no GitHub e [VSCode](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza)
 
-Como professor, isso significa que você pode criar um ambiente, na nuvem, para sua turma que todos os alunos possam usar com configuração zero ou quase zero, independentemente do sistema operacional que estejam usando.
+Como professor, isso significa que você pode criar um ambiente na nuvem para sua turma e que todos os alunos podem usar com configuração zero ou quase zero, independentemente do sistema operacional que estão usando.
 
 ## 🧑‍🏫 O que é GitHub Codespace e como posso usá-lo em minhas aulas?
 
@@ -40,7 +40,7 @@ Se você ainda não é professor do Global Campus, inscreva-se [aqui](https://ed
 
 ## Costumização
 
-Personalize seu projeto para GitHub Codespaces alterando os arquivos de configuração em seu repositório (geralmente conhecido como Configuração-como-Código), que cria uma configuração de codespace repetível para todos os usuários de seu projeto.
+Personalize seu projeto para GitHub Codespaces alterando os arquivos de configuração em seu repositório (geralmente conhecido como Configuration-as-Code ou, em português, Configuração-como-Código), que cria uma configuração de codespace repetível para todos os usuários de seu projeto.
 
 Você pode configurar coisas como:
 
@@ -55,16 +55,16 @@ Você pode configurar coisas como:
 
 Este repositório é um modelo do GitHub. Ele contém o seguinte:
 
-- [examplo-notebook.ipynb](./examplo-notebook.ipynb): um notebook Jupyter usando a biblioteca [Pandas](https://pandas.pydata.org/) para ensinar operações básicas com um pequeno arquivo CSV (separado por vírgula Arquivo de valor) [dataset](../../wine-regions.csv)
-- [.devcontainer/Dockerfile](./.devcontainer/Dockerfile): Arquivo de configuração usado pelo Codespaces para determinar o sistema operacional e outros detalhes.
-- [.devcontainer/devcontainer.json](./.devcontainer/devcontainer.json), Um arquivo de configuração usado por Codespaces para configurar [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), como a ativação de extensões adicionais.
+- [exemplo.ipynb](./exemplo.ipynb): um notebook Jupyter usando a biblioteca [Pandas](https://pandas.pydata.org/) para ensinar operações básicas com um pequeno arquivo CSV (separado por vírgula Arquivo de valor) [dataset](../../wine-regions.csv)
+- [.devcontainer/Dockerfile](./../../.devcontainer/Dockerfile): Arquivo de configuração usado pelo Codespaces para determinar o sistema operacional e outros detalhes.
+- [.devcontainer/devcontainer.json](./../../.devcontainer/devcontainer.json), Um arquivo de configuração usado por Codespaces para configurar [Visual Studio Code](https://visualstudio.microsoft.com/?WT.mc_id=academic-77460-alfredodeza), como a ativação de extensões adicionais.
 - `README.md`. Este arquivo descreve este repositório e o que há nele.
 
 ## 🧐 Experimente
 
 Experimente este repositório de modelos usando Codespaces seguindo estas etapas:
 
-1. Crie um repositório a partir deste modelo. Use este [link de criação de repositório](https://github.com/microsoft/codespaces-teaching-template-py/generate). Você pode tornar o repositório privado ou público, você que decide.
+1. Crie um repositório a partir deste modelo. Use este [link de criação de repositório](https://github.com/microsoft/codespaces-teaching-template-py/generate). Você pode tornar o repositório privado ou público, você decide.
 1. Navegue até a página principal do repositório recém-criado.
 1. Sob o nome do repositório, use o menu suspenso Código e, na guia Codespaces, selecione "Criar Codespace na main".
     ![Criar o Codespace](https://docs.github.com/assets/cb-138303/images/help/codespaces/new-codespace-button.png)
@@ -74,27 +74,26 @@ Experimente este repositório de modelos usando Codespaces seguindo estas etapas
 
 ### Inspecione seu ambiente do Codespaces
 
-O que você tem neste ponto é um ambiente pré-configurado onde todas as configurações e bibliotecas que você precisa já estão instalados - uma experiência de configuração zero.
+O que você tem neste momento é um ambiente pré-configurado, em que todas as configurações e bibliotecas que você precisa já estão instaladas - uma experiência de configuração zero.
 
-Você também tem um Jupyter Notebook que pode começar a usar sem nenhuma configuração.
+Você, também, tem um Jupyter Notebook que pode começar a usar, sem nenhuma configuração adicional.
 
 > Este ambiente será executado da mesma forma, independentemente de seus alunos estarem no Windows, macOS ou Linux.
 
-Abra seu arquivo Jupyter Notebook [examplo-notebook.ipynb](./examplo-notebook.ipynb) e observe como você pode adicionar código e executá-lo.
+Abra seu arquivo Jupyter Notebook [exemplo.ipynb](./exemplo.ipynb) e observe como você pode adicionar código e executá-lo.
 
 ## Personalize o Codespace
 
-Vamos fazer alterações em seu ambiente. Abordaremos dois desafios diferentes que você provavelmente deseja fazer:
+Vamos fazer algumas alterações em seu ambiente. Abordaremos dois desafios diferentes e que você provavelmente deseja fazer:
 
-1. Altere a versão do Python instalada
-1. Adicione uma extensão
-
+1. Alterar a versão do Python instalada
+2. Adicionar uma extensão
 
 ### Etapa 1: alterar o ambiente Python
 
 Digamos que você queira alterar qual versão do Python está instalada. Isso é algo que você pode controlar.
 
-Abra [.devcontainer/devcontainer.json](./.devcontainer/devcontainer.json) e substitua a seguinte seção:
+Abra [.devcontainer/devcontainer.json](./../../.devcontainer/devcontainer.json) e substitua a seguinte seção:
 
 ```json
 "VARIANT": "3.8-bullseye"
@@ -112,13 +111,13 @@ Se você fizer qualquer alteração na configuração do `devcontainer.json`, um
 
 ![Recriando Codespace](./images/Codespace_rebuild.png)
 
-Clique em reconstruir. Aguarde até que seu Codespace reconstrua o ambiente VS Code.
+Clique em Rebuild (em português, "Reconstruir"). Aguarde até que seu Codespace reconstrua o ambiente VS Code.
 
 ### Etapa 2: adicionar uma extensão
 
 Seu ambiente vem com extensões pré-instaladas. Você pode alterar com quais extensões seu ambiente Codespaces começa. Veja como:
 
-1. Abra o arquivo [.devcontainer/devcontainer.json](./.devcontainer/devcontainer.json) e localize o seguinte elemento JSON
+1. Abra o arquivo [.devcontainer/devcontainer.json](./../../.devcontainer/devcontainer.json) e localize o seguinte elemento JSON
 **extensões**:
 
    ```json
@@ -138,13 +137,13 @@ Seu ambiente vem com extensões pré-instaladas. Você pode alterar com quais ex
    ]
    ```
 
-   Essa string é o identificador exclusivo do [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter&WT.mc_id=academic-77460-alfredodeza), uma extensão popular para formatar código Python de acordo com as melhores práticas. Adicionar o identificador _"ms-python.black-formatter"_ à lista permite que os Codespaces saibam que essa extensão deve ser pré-instalada na inicialização.
+   Essa string é o identificador exclusivo do [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter&WT.mc_id=academic-77460-alfredodeza), uma extensão popular para formatar código Python, de acordo com as melhores práticas. Adicionar o identificador _"ms-python.black-formatter"_ à lista permite que os Codespaces saibam que essa extensão deve ser pré-instalada na inicialização.
 
    Aviso: Ao alterar qualquer configuração no json, aparecerá uma caixa após salvar.
 
    ![Recriando o Codespace](../../images/Codespace_rebuild.png)
 
-   Clique em reconstruir. Aguarde seu codespace reconstruir o ambiente do VS Code.
+   Clique em Rebuild (em português, "Reconstruir"). Aguarde seu codespace reconstruir o ambiente do VS Code.
 
 Para encontrar o identificador exclusivo de uma extensão:
 
@@ -154,10 +153,10 @@ Para encontrar o identificador exclusivo de uma extensão:
 ## 🤖 Use o Copilot para criar uma aula para os alunos
 O GitHub Copilot agora está disponível no GitHub Codespaces. Você pode usar o Copilot para criar uma aula para seus alunos. Este repositório inclui a extensão para Copilot para que você possa usá-lo imediatamente. Certifique-se de que sua conta tenha acesso ao Copilot. Caso não tenha acesso, você pode [solicitar acesso aqui](https://github.com/login?return_to=%2Fgithub-copilot%2Fsignup).
 
-O GitHub Copilot é gratuito para alunos e professores. [Saiba mais](https://education.github.com/pack/offers). Siga [estas etapas](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba- p/3736279?WT.mc_id=academic-0000-alfredodeza) para verificar sua associação de aluno ou professor e habilitar o Copilot gratuitamente.
+O GitHub Copilot é gratuito para alunos e professores. [Saiba mais](https://education.github.com/pack/offers). Siga [estas etapas](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-setting-up-github-student-and-github-copilot-as-an/ba-p/3736279?WT.mc_id=academic-0000-alfredodeza) para verificar sua associação de aluno ou professor e habilitar o Copilot gratuitamente.
 
 ### Passo 1: Escreva uma descrição para sua aula
-Abra o arquivo [examplo-notebook.ipynb](./examplo-notebook.ipynb) e escreva uma descrição para sua lição na primeira célula. Certifique-se de que o Copilot esteja ativado clicando no ícone do Copilot na barra de status e verificando se você está conectado ao GitHub.
+Abra o arquivo [exemplo.ipynb](./exemplo.ipynb) e escreva uma descrição para sua lição na primeira célula. Certifique-se de que o Copilot esteja ativado clicando no ícone do Copilot na barra de status e verificando se você está conectado ao GitHub.
 
 Edite a primeira célula e comece a digitar `Para esta lição`. O Copilot irá sugerir uma descrição para sua aula. Selecione a sugestão e pressione `Tab` para aceitá-la.
 
@@ -165,12 +164,12 @@ A célula agora deve ser semelhante a esta:
 
 ```markdown
 # Crie uma aula usando o GitHub Copilot
-Nesta lição, você usará o GitHub Copilot para criar uma lição para os alunos aprenderem a escrever funções em Python. Você usará o Copilot para escrever código e usará o Copilot para escrever texto.
+Nesta esta lição, você usará o GitHub Copilot para criar uma aula para os alunos aprenderem a escrever funções em Python. Você usará o Copilot para escrever código e também para escrever texto.
 ```
 
 Tudo bem se o Copilot não sugerir uma réplica exata do texto acima. Você pode editar o texto para torná-lo mais adequado para sua lição.
 
-### Passo 2 Adicione etapas à sua lição
+### Passo 2: Adicione etapas à sua lição
 Adicione uma nova célula abaixo da célula de descrição e comece a digitar `### Etapa 1: Habilitar` para criar uma nova etapa em sua lição. O Copilot irá sugerir uma etapa para sua aula. Selecione a sugestão e pressione `Tab` para aceitá-la.
 
 A célula agora deve ser semelhante a esta:
@@ -195,13 +194,13 @@ Adicione uma nova célula de código abaixo da última etapa e comece com um com
 Esta é uma amostra do que o Copilot sugeriu para o desafio acima:
 
 ```python
-# create a challenge for a student to write a function that returns the sum of two numbers
+# Crie um desafio para um aluno escrever uma função que retorna a soma de dois números
 """
-In this challenge, you'll write a function that returns the sum of two numbers.
-You'll use the `sum` function to add the two numbers.
-Start by writing a function that takes two numbers as parameters.
-Then, use the `sum` function to add the two numbers.
-Finally, return the sum of the two numbers.
+Neste desafio, você escreverá uma função que retorna a soma de dois números.
+Você usará a função 'soma' para adicionar os dois números.
+Comece escrevendo uma função que usa dois números como parâmetros.
+Em seguida, use a função 'soma' para adicionar os dois números.
+Por fim, retorne a soma dos dois números.
 """
 ```
 
@@ -213,7 +212,7 @@ Crie quantas células de código com prompts de exemplo para sua lição.
 Adicione uma nova célula abaixo para escrever Markdown (não código!) e comece escrevendo `### Quiz`. Em seguida, adicione um comentário _HTML_ para criar um prompt para que o GitHub Copilot entenda que tipo de questionário você deseja criar. Por exemplo, você poderia usar algo parecido com isto:
 
 ```html
-<!-- generate a quiz of 5 questions about using Python functions with a mix of variable arguments and keyword arguments -->
+<!-- gere um quiz de 5 perguntas sobre o uso de funções Python com uma mistura sobre variáveis e palavra-chave como argumento-->
 ```
 
 O Copilot pode não sugerir um teste para você imediatamente. Se for esse o caso, adicione novas linhas ao comentário e pressione `Return` (ou `Enter`) e comece a enumerar as perguntas que deseja fazer. Por exemplo, você poderia escrever:
@@ -247,4 +246,4 @@ Parabéns! Você criou uma lição para os alunos aprenderem a escrever funçõe
 
 
 ### 🔎 Encontrou um problema ou tem uma ideia de melhoria?
-Ajude-nos a deixar este repositório melhor [informando-nos e abrindo uma issue!](/../../issues/new).
+Ajude-nos a deixar este repositório melhor [informando-nos e abrindo uma issue!](https://github.com/education/codespaces-teaching-template-py/issues/new).
