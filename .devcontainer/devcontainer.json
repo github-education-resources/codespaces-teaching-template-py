@@ -21,10 +21,7 @@
 		"vscode": {
 			// Set *default* container specific settings.json values on container create.
 			"settings": {
-				"python.defaultInterpreterPath": "/home/vscode/venv/bin/python",
-				"python.linting.enabled": true,
-				"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
-				"python.linting.flake8Enabled": true
+				"python.defaultInterpreterPath": "/home/vscode/venv/bin/python"
 			},
 
 			// Add the IDs of extensions you want installed when the container is created.
